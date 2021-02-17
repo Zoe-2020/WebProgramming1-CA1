@@ -3,12 +3,12 @@
     <legend>Add a Link</legend>
     <div class='form-group'>
     <label for="title">Title</label>
-    <Input name="title" class="form-control" placeholder="Enter link title">
+    <Input name="title" class="form-control" placeholder="Enter link title" #newtitle>
     </div>
     <div class='form-group'>
     <label for="link">Link</label>
-    <Input name="link" class="form-control" placeholder="Enter URL">
+    <Input name="link" class="form-control" placeholder="Enter URL" #newlink>
     </div>
-    <button >Submit Link</button>
+    <button (click)="addArticle(newtitle,newlink)" >Submit Link</button>
   </fieldset>
 </form>

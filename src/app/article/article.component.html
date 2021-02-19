@@ -3,16 +3,17 @@
         <div class="card-header pull-left">
                <h3>{{ article.votes }}</h3> 
                     
-                <div class="label">
+                <div class="label"></div>
             <h4>Points</h4>
         </div>
  
 </div>
-<div>
+<div class="card-body">
 <h5>
     <a href="{{ article.link }}">{{ article.title }}</a>
    </h5>
-</div>
+   <p><small>{{ article.domain() }}</small></p>
+
 
 
     <a href (click)="voteUp()">
@@ -24,9 +25,9 @@
 downvote
 </a>
 
-
 </div>
 
 </div>
+
 
 
